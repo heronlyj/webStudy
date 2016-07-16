@@ -1,0 +1,268 @@
+/*-------------- specific ---------------*/
+
+html {
+	height: 100%;
+	width: 100%;
+	min-height: 810px;
+	min-width: 810px;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+* {
+	margin: 0;
+}
+
+
+/*---------------div---------------*/
+
+div.container {
+	width: calc(100% - 20px);
+	height: calc(100% - 20px - 140px);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+div #top {
+	height: 24px;
+	width: 100%;
+	text-align: right;
+	font-size: 13px;
+}
+
+div #u1 {
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	display: inline-block;
+	width: 320px;
+	height: 23px;
+	line-height: 23px;
+	padding-right: 30px;
+}
+
+div #more {
+	display: inline-block;
+	width: 60px;
+	height: 23px;
+	text-align: center;
+	padding-right: 0;
+	background: #3385ff;
+	font-size: 12px;
+	line-height: 23px;
+}
+
+#log_div {
+	text-align: center;
+	vertical-align: bottom;
+	height: 130px;
+	width: calc(100% - 10px);
+}
+
+#search {
+	height: 191px;
+	margin-top: 150px;
+	/*background: orange;*/
+}
+
+#input_div {
+	width: 640px;
+	height: 36px;
+	position: relative;
+	left: -320px;
+	margin-left: 50%;
+}
+
+#_blank {
+	height: 100px;
+}
+
+div.wrap {
+	height: 61px;
+	/*background-color: greenyellow;*/
+}
+
+#bottom {
+	position: relative;
+	height: 130px;
+	width: calc(100% - 20px);
+	left: 10px;
+	bottom: 0;
+	padding-bottom: 10px;
+	align-items: center;
+	/*background-color: orchid;*/
+}
+
+#img_logo {
+	width: 270px;
+	height: 129px;
+}
+
+#search_input {
+	height: 34px;
+	width: 541px;
+	padding: 0;
+	position: absolute;
+	bottom: 0;
+	line-height: 30px;
+	font-size: 14px;
+	border: 1px solid #3385ff;
+	border-color: #b8b8b8 transparent #ccc #b8b8b8;
+}
+
+#baidu_button {
+	cursor: pointer;
+	height: 36px;
+	width: 100px;
+	position: absolute;
+	padding: 0;
+	/*top: 1px;*/
+	right: -3px;
+	border: none;
+	font-size: 15px;
+	color: white;
+	background: #3385ff;
+}
+
+.soutu-btn {
+	z-index: 1;
+	position: absolute;
+	right: 111px;
+	top: 50%;
+	margin-top: -8px;
+	height: 16px;
+	width: 18px;
+	background: #fff url(../img/camera_new_679c15cc.png) no-repeat;
+	background-image: -webkit-image-set(url(../img/camera_new_679c15cc.png) 1x, url(../img/camera_new_x2_0d93badf.png) 2x);
+	background-image: -moz-image-set(url(../img/camera_new_679c15cc.png) 1x, url(../img/camera_new_x2_0d93badf.png) 2x);
+	background-image: -o-image-set(url(../img/camera_new_679c15cc.png) 1x, url(../img/camera_new_x2_0d93badf.png) 2x);
+	background-image: -ms-image-set(url(../img/camera_new_679c15cc.png) 1x, url(./img/camera_new_x2_0d93badf.png) 2x);
+	cursor: pointer;
+}
+
+.ipt_rec {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    height: 34px;
+    width: 24px;
+    right: 141px;
+    background: url(../img/mic.png) no-repeat center;
+    background-image: -webkit-image-set(url(../img/mic.png) 1x);
+    background-image: -moz-image-set(url(../img/mic.png) 1x);
+    background-image: -o-image-set(url(../img/mic.png) 1x);
+    background-image: -ms-image-set(url(../img/mic.png) 1x);
+    background-size: 13px 18px;
+    background-position: 0 50%;
+    cursor: pointer;
+}
+
+#baidu_button:hover {}
+
+#search_form {
+	height: 36px;
+}
+#input_area {
+	width: 540px;
+	height: 36px;
+	margin-left: calc(50% - 270px);
+	background-color: blue;
+}
+
+#bottom_left {
+	position: absolute;
+	width: 277px;
+	height: 60px;
+	float: left;
+	left: 50%;
+	margin-left: -287px;
+	/*background-color: olivedrab;*/
+}
+
+#bottom_riglt {
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	float: left;
+	left: 50%;
+	margin-left: 10px;
+	color: #999;
+	/*background-color: peru;*/
+}
+
+#bottom_riglt a {
+	color: #999;
+}
+
+#bottom_right_p {
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+}
+
+#bottom_right_p_l {
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+}
+
+#bottom_right_p_r {
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.bottom_rq {
+	float: left;
+	height: 60px;
+	width: 60px;
+	/*border: 1px solid red;*/
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.bottom_font {
+	float: left;
+	height: 40px;
+	width: 60px;
+	/*top: 10px;*/
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+}
+
+#bottom_block {
+	float: left;
+	width: 33px;
+}
+
+a:link {
+	color: black;
+}
+
+a:active {
+	text-decoration: blink;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: blue;
+}
+
+#more a {
+	text-decoration: none;
+	color: white;
+}
+
+.subTitle {
+	color: gray;
+}

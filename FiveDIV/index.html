@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>FiveDiv</title>
+	</head>
+	<style type="text/css">
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0px;
+		}
+		
+		html {
+			width: 100%;
+			height: 100%;
+			min-width: 400px;
+			min-height: 400px;
+		}
+		
+		#outer {
+			width: 100%;
+			height: 100%;
+		}
+		#inner{
+			width: 312px;
+			height: 312px;
+			position: relative;
+			top: 50%;
+			left: 50%;
+			margin-left: -156px;
+			margin-top: -156px;
+		}
+		#inner div{
+			margin: 2px;
+			float: left;
+			position: relative;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+		}
+
+		#inner .show {
+			box-shadow: 0 0 1em black;
+		}
+		
+		#left {
+			background-color: red;
+		}
+		
+		#top {
+			background-color: green;
+		}
+		
+		#right {
+			background-color: yellow;
+		}
+		
+		#bottom {
+			background-color: orange;
+		}
+		
+		#middle {
+			display: flex;
+			/*background-color: blueviolet;*/
+			/*text-align: center;*/
+			/*vertical-align: middle;*/
+		}
+	</style>
+
+	<body>
+		<div id="outer">
+			<div id="inner">
+				<div></div>
+				<div class="show" id="top"></div>
+				<div></div>
+				<div class="show" id="left"></div>
+				<div class="show" id="middle">
+					<!--<img src="img/bastion.jpg" style="width: 100px; height: 100px;"/>-->
+					<!--<img src="img/Song_Bird.png" style="margin: auto;"/>-->
+					<img src="img/Amarok_72px.png" style="margin: auto;"/>
+				</div>
+				<div class="show" id="right"></div>
+				<div></div>
+				<div class="show" id="bottom"></div>
+				<div></div>
+			</div>
+		</div>
+	</body>
+
+</html>

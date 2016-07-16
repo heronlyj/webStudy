@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>实战盒子模型与弹性盒模型</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<p>1. 标准盒模型与怪异盒模型</p>
+		<div id="boxModel">
+			<div id="content-box">
+				<div class="content">
+					<div id="boarder1">
+						<div class="detail">
+							标准盒
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="border-box">
+				<div class="content">
+					<div id="border2">
+						<div class="detail">
+							怪异盒
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="">
+			<div id="">
+
+			</div>
+			<div id="">
+
+			</div>
+		</div>
+
+		<p>2.弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏</p>
+		<div>
+			<ul>
+				<li>弹性盒子水平分栏</li>
+				<p></p>
+				<div id="horizontally">
+					<div id="horizontally1">1</div>
+					<div id="horizontally2">2</div>
+					<div id="horizontally3">3</div>
+				</div>
+				<p></p>
+				
+				<li>弹性盒子垂直分栏 (排序)</li>
+				<p></p>
+				<div id="vertical">
+					<div id="vertical1">1</div>
+					<div id="vertical2">2</div>
+					<div id="vertical3">3</div>
+				</div>
+				<p></p>
+				
+				<li>column 分栏</li>
+				<p></p>
+				<div id="column-box">
+					Display 的上一层便是图形处理单元 GPU，GPU 是一个专门为图形高并发计算而量身定做的处理单元。这也是为什么它能同时更新所有的像素，并呈现到显示器上。它并发的本性让它能高效的将不同纹理合成起来。我们将有一小块内容来更详细的讨论图形合成。关键的是，GPU 是非常专业的，因此在某些工作上非常高效。比如，GPU 非常快，并且比 CPU 使用更少的电来完成工作。通常 CPU 都有一个普遍的目的，它可以做很多不同的事情，但是合成图像在 CPU 上却显得比较慢。GPU Driver 是直接和 GPU
+					交流的代码块。不同的GPU是不同的性能怪兽，但是驱动使他们在下一个层级上显示的更为统一，典型的下一层级有 OpenGL/OpenGL ES.OpenGL(Open Graphics Library) 是一个提供了 2D 和 3D 图形渲染的 API。GPU 是一块非常特殊的硬件，OpenGL 和 GPU 密切的工作以提高GPU的能力，并实现硬件加速渲染。对大多数人来说，OpenGL 看起来非常底层，但是当它在1992年第一次发布的时候(20多年前的事了)是第一个和图形硬件(GPU)交流的标准化方式，这是一个重大的飞跃，程序员不再需要为每个GPU重写他们的应用了。OpenGL
+					之上扩展出很多东西。在 iOS 上，几乎所有的东西都是通过 Core Animation 绘制出来，然而在 OS X 上，绕过 Core Animation 直接使用 Core Graphics 绘制的情况并不少见。对于一些专门的应用，尤其是游戏，程序可能直接和 OpenGL/OpenGL ES 交流。事情变得使人更加困惑，因为 Core Animation 使用 Core Graphics 来做一些渲染。像 AVFoundation，Core Image 框架，和其他一些混合的入口。要记住一件事情，GPU
+					是一个非常强大的图形硬件，并且在显示像素方面起着核心作用。它连接到 CPU。从硬件上讲两者之间存在某种类型的总线，并且有像 OpenGL，Core Animation 和 Core Graphics 这样的框架来在 GPU 和 CPU 之间精心安排数据的传输。为了将像素显示到屏幕上，一些处理将在 CPU 上进行。然后数据将会传送到 GPU，这也需要做一些相应的操作，最终像素显示到屏幕上。这个过程的每一部分都有各自的挑战，并且许多时候需要做出折中的选择。
+				</div>
+				<p></p>
+				
+				<li>旧版弹性盒子居中布局</li>
+				<p></p>
+				<div id="old-Center">
+					<div class="content"></div>
+				</div>
+				<p></p>
+			</ul>
+
+		</div>
+
+	</body>
+
+</html>
