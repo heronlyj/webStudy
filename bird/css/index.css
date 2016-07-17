@@ -1,0 +1,60 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    min-width: 1000px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*css3 的 header*/
+header{
+    background-color: #d3d3d3;
+    margin: 5px 5px 0 5px;
+    width: calc(100% - 10px);
+}
+
+/*html 的 内容主体*/
+.content {
+    position: relative;
+    float: left;
+    margin: 5px 5px 0 5px;
+    width: calc(100% - 10px);
+}
+
+/*设置相对布局*/
+.main, .left, .right, .main_ininer {
+    position: relative;
+    float: left;
+}
+
+/**/
+.main {
+    width: 100%;
+}
+
+/**/
+.left {
+    margin-left: -100%;
+    width: 200px;
+    background-color: #d3d3d3;
+}
+
+/**/
+.right {
+    margin-left:-200px;
+    width: 200px;
+    background-color: #d3d3d3;
+}
+
+/**/
+.main_ininer {
+    margin:0 205px 0 205px;
+    background-color: #d3d3d3;
+}
+
+

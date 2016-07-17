@@ -4,7 +4,7 @@ html {
 	height: 100%;
 	width: 100%;
 	min-height: 810px;
-	min-width: 810px;
+	min-width: 1000px;
 }
 
 body {
@@ -67,12 +67,19 @@ div #more {
 	/*background: orange;*/
 }
 
+
+/*百度搜索输入框*/
 #input_div {
 	width: 640px;
 	height: 36px;
 	position: relative;
 	left: -320px;
 	margin-left: 50%;
+	border: 1px solid #000000;
+}
+
+#input_div:hover {
+	border: 1px solid #3385ff;
 }
 
 #_blank {
@@ -114,12 +121,12 @@ div.wrap {
 
 #baidu_button {
 	cursor: pointer;
-	height: 36px;
+	height: 38px;
 	width: 100px;
 	position: absolute;
 	padding: 0;
-	/*top: 1px;*/
-	right: -3px;
+	top: -1px;
+	right: -1px;
 	border: none;
 	font-size: 15px;
 	color: white;
@@ -142,28 +149,38 @@ div.wrap {
 	cursor: pointer;
 }
 
+/*麦克风图片*/
 .ipt_rec {
-    z-index: 1;
-    position: absolute;
-    right: 0;
-    height: 34px;
-    width: 24px;
-    right: 141px;
-    background: url(../img/mic.png) no-repeat center;
-    background-image: -webkit-image-set(url(../img/mic.png) 1x);
-    background-image: -moz-image-set(url(../img/mic.png) 1x);
-    background-image: -o-image-set(url(../img/mic.png) 1x);
-    background-image: -ms-image-set(url(../img/mic.png) 1x);
-    background-size: 13px 18px;
-    background-position: 0 50%;
-    cursor: pointer;
+	z-index: 1;
+	position: absolute;
+	right: 0;
+	height: 34px;
+	width: 24px;
+	right: 141px;
+	background: url(../img/mic.png) no-repeat center;
+	background-image: -webkit-image-set(url(../img/mic.png) 1x);
+	background-image: -moz-image-set(url(../img/mic.png) 1x);
+	background-image: -o-image-set(url(../img/mic.png) 1x);
+	background-image: -ms-image-set(url(../img/mic.png) 1x);
+	background-size: 13px 18px;
+	background-position: 0 50%;
+	cursor: pointer;
 }
 
-#baidu_button:hover {}
+.ipt_rec:hover {
+	background: url(../img/mic_force.png) no-repeat center;
+	background-image: -webkit-image-set(url(../img/mic_force.png) 1x);
+	background-image: -moz-image-set(url(../img/mic_force.png) 1x);
+	background-image: -o-image-set(url(../img/mic_force.png) 1x);
+	background-image: -ms-image-set(url(../img/mic_force.png) 1x);
+	background-size: 13px 18px;
+	background-position: 0 50%;
+}
 
 #search_form {
 	height: 36px;
 }
+
 #input_area {
 	width: 540px;
 	height: 36px;
@@ -255,7 +272,7 @@ a:visited {
 }
 
 a:hover {
-	color: blue;
+	color: blue !important;
 }
 
 #more a {
@@ -266,3 +283,8 @@ a:hover {
 .subTitle {
 	color: gray;
 }
+
+
+
+
+
