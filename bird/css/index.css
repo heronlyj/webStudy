@@ -12,18 +12,27 @@ body{
 }
 
 /*css3 的 header*/
-header{
+.header{
     background-color: #d3d3d3;
     margin: 5px 5px 0 5px;
+    width: calc(100% - 10px);
+}
+
+.footer {
+    position: relative;
+    background-color: #d3d3d3;
+    height: 100px;
+    bottom: 0;
+    margin: 0 5px 5px 5px;
     width: calc(100% - 10px);
 }
 
 /*html 的 内容主体*/
 .content {
     position: relative;
-    float: left;
-    margin: 5px 5px 0 5px;
+    margin: 5px 5px 5px 5px;
     width: calc(100% - 10px);
+    overflow: hidden;
 }
 
 /*设置相对布局*/
@@ -42,6 +51,8 @@ header{
     margin-left: -100%;
     width: 200px;
     background-color: #d3d3d3;
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
 }
 
 /**/
@@ -49,12 +60,16 @@ header{
     margin-left:-200px;
     width: 200px;
     background-color: #d3d3d3;
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
 }
 
 /**/
 .main_ininer {
     margin:0 205px 0 205px;
     background-color: #d3d3d3;
+    padding-bottom: 999999px;
+    margin-bottom: -999999px;
 }
 
 
