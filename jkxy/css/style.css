@@ -1,0 +1,46 @@
+/*body, html {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#title {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    border: 1px solid #ececec;
+}
+
+#title .heard {
+    position: relative;
+    width: 1000px;
+    height: 60px;
+}
+
+#title .logo {
+    width: 109px;
+    display: inline-block;
+    margin-right: 60px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+}
+
+#title img {
+    vertical-align: middle;
+    box-sizing: border-box;
+}

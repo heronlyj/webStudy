@@ -1,0 +1,401 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*定义外层box,相当于一个画布，垂直水平居中*/
+.box{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    /*background-color: red;*/
+}
+
+/*遮挡层  遮挡二三层多余的线条*/
+.maskOne{
+    position: absolute;
+    width: 135px;
+    height: 247px;
+    /* border: 1px solid #49498E; */
+    z-index: 950;
+    left: 240px;
+    bottom: 79px;
+    border-radius: 50%;
+    transform: rotateZ(171deg);
+    background-color: white;
+}
+
+.maskTwo{
+    position: absolute;
+    width: 99px;
+    height: 137px;
+    /*border: 1px solid #49498E;*/
+    z-index: 950;
+    left: 232px;
+    bottom: 77px;
+    border-radius: 50%;
+    transform: rotateZ(139deg);
+    background-color: white;
+}
+
+.maskThree{
+    position: absolute;
+    width: 99px;
+    height: 137px;
+    /* border: 1px solid #49498E; */
+    z-index: 952;
+    left: 122px;
+    bottom: 127px;
+    border-radius: 50%;
+    transform: rotateZ(139deg);
+    background-color: white;
+}
+
+.maskFour{
+    position: absolute;
+    width: 99px;
+    height: 137px;
+    /* border: 1px solid #49498E; */
+    z-index: 952;
+    left: 165px;
+    bottom: 160px;
+    border-radius: 50%;
+    transform: rotateZ(193deg);
+    background-color: white;
+}
+
+.maskFive{
+    position: absolute;
+    width: 99px;
+    height: 137px;
+    /* border: 1px solid #49498E; */
+    z-index: 952;
+    left: 266px;
+    bottom: 125px;
+    border-radius: 50%;
+    transform: rotateZ(180deg);
+    background-color: white;
+}
+
+.maskSix{
+    position: absolute;
+    width: 99px;
+    height: 198px;
+    /* border: 1px solid #49498E; */
+    z-index: 952;
+    left: 310px;
+    bottom: 119px;
+    border-radius: 50%;
+    transform: rotateZ(180deg);
+    background-color: white;
+}
+
+/*壳  第二层*/
+.shell{
+    position: absolute;
+    width:320px;
+    height: 310px;
+    border:5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    margin-left:20px;
+    margin-top: 50px;
+    z-index: 930;
+}
+
+/*壳 第一层*/
+.smallShell{
+    position: absolute;
+    width:170px;
+    height: 180px;
+    border:5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    top:155px;
+    left:60px;
+    /*z-index 属性设置元素的堆叠顺序。
+    拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。*/
+    z-index: 990;
+}
+
+/*身体 第四层*/
+.body{
+    position: absolute;
+    width: 366px;
+    height: 87px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    left: 43px;
+    bottom: 93px;
+    transform: rotate(15deg);
+    z-index: 600;
+}
+
+/* 身体 第三层*/
+.body2{
+    position: absolute;
+    width: 256px;
+    height: 235px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 44% 64%;
+    left: 205px;
+    bottom: 84px;
+    transform: rotate(30deg);
+    z-index: 920;
+}
+
+.body3{
+    position: absolute;
+    width: 128px;
+    height: 143px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 35% 63%;
+    left: 135px;
+    bottom: 137px;
+    transform: rotate(30deg);
+    z-index: 951;
+}
+
+.body4{
+    position: absolute;
+    width: 128px;
+    height: 196px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 116% 76%;
+    left: 263px;
+    bottom: 131px;
+    transform: rotate(-4deg);
+    z-index: 951;
+}
+
+/*眼睛 第一层*/
+.eyeOne{
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    left: 321px;
+    top: 146px;
+    z-index: 999;
+}
+
+.eyeBallOne{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    /* border: 5px solid black; */
+    background-color: black;
+    border-radius: 50% 50%;
+    left: 375px;
+    top: 160px;
+    z-index: 1000;
+    -webkit-animation: eyesAnimations 6s infinite;
+    -o-animation: eyesAnimations 6s infinite;
+    animation: eyesAnimations 6s infinite;
+}
+
+/*黑眼球移动动画定义*/
+@keyframes eyesAnimations{
+    0%		{transform: translate(0px, 0px);}
+    23%		{transform: translate(0px, 0px);}
+    25%		{transform: translate(3px, 0px);}
+    48%		{transform: translate(3px, 0px);}
+    50%		{transform: translate(3px, 3px);}
+    63%		{transform: translate(3px, 3px);}
+    65%		{transform: translate(-4px, 3px);}
+    98%		{transform: translate(-4px, 3px);}
+    100%	{transform: translate(0px, 0px);}
+}
+
+/*三个浏览器的动画定义的适配*/
+/*webkit适配*/
+@-webkit-keyframes eyesAnimations{
+    0%		{-webkit-transform: translate(0px, 0px);}
+    23%		{-webkit-transform: translate(0px, 0px);}
+    25%		{-webkit-transform: translate(3px, 0px);}
+    48%		{-webkit-transform: translate(3px, 0px);}
+    50%		{-webkit-transform: translate(3px, 3px);}
+    63%		{-webkit-transform: translate(3px, 3px);}
+    65%		{-webkit-transform: translate(-4px, 3px);}
+    98%		{-webkit-transform: translate(-4px, 3px);}
+    100%	{-webkit-transform: translate(0px, 0px);}
+}
+
+/*firefox适配*/
+@-moz-keyframes eyesAnimations{
+    0%		{-moz-transform: translate(0px, 0px);}
+    23%		{-moz-transform: translate(0px, 0px);}
+    25%		{-moz-transform: translate(3px, 0px);}
+    48%		{-moz-transform: translate(3px, 0px);}
+    50%		{-moz-transform: translate(3px, 3px);}
+    63%		{-moz-transform: translate(3px, 3px);}
+    65%		{-moz-transform: translate(-4px, 3px);}
+    98%		{-moz-transform: translate(-4px, 3px);}
+    100%	{-moz-transform: translate(0px, 0px);}
+}
+
+/*Opera适配*/
+@-o-keyframes eyesAnimations{
+    0%		{-o-transform: translate(0px, 0px);}
+    23%		{-o-transform: translate(0px, 0px);}
+    25%		{-o-transform: translate(3px, 0px);}
+    48%		{-o-transform: translate(3px, 0px);}
+    50%		{-o-transform: translate(3px, 3px);}
+    63%		{-o-transform: translate(3px, 3px);}
+    65%		{-o-transform: translate(-4px, 3px);}
+    98%		{-o-transform: translate(-4px, 3px);}
+    100%	{-o-transform: translate(0px, 0px);}
+}
+
+
+/*眼睛 第二层*/
+.eyeTwo{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    left: 375px;
+    top: 127px;
+    z-index: 990;
+}
+
+.eyeBallTwo{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    /* border: 5px solid black; */
+    background-color: black;
+    border-radius: 50% 50%;
+    left: 429px;
+    top: 139px;
+    z-index: 1000;
+    -webkit-animation: eyesAnimations 6s infinite;
+    -o-animation: eyesAnimations 6s infinite;
+    animation: eyesAnimations 6s infinite;
+}
+
+/*嘴巴*/
+.mouth{
+    position: absolute;
+    width: 50px;
+    height: 39px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    left: 387px;
+    top: 249px;
+    transform: rotate(176deg);
+    z-index: 990;
+}
+
+.maskMouthOne{
+    position: absolute;
+    width: 59px;
+    height: 32px;
+    /* border: 1px solid #49498E; */
+    background-color: white;
+    /* border-radius: 50% 50%; */
+    left: 370px;
+    top: 246px;
+    transform: rotate(163deg);
+    z-index: 991;
+}
+
+.maskMouthTwo{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    /* border: 1px solid #49498E; */
+    background-color: white;
+    /* border-radius: 50% 50%; */
+    left: 411px;
+    top: 246px;
+    transform: rotate(155deg);
+    z-index: 991;
+}
+
+/*触角*/
+/*通过 overflow:hidden 来隐藏子元素里面超出父元素宽度外的线条*/
+.antennaOneInner{
+    position: absolute;
+    width: 21px;
+    height: 81px;
+    /* background-color: blue; */
+    overflow: hidden;
+    left: 348px;
+    top: 71px;
+    z-index: 989;
+}
+
+.antennaOne{
+    /*position: absolute;*/
+    width: 50px;
+    height: 75px;
+    border: 5px solid black;
+    /* background-color: white; */
+    border-radius: 51% 50%;
+    left: 348px;
+    top: 71px;
+    transform: rotate(174deg);
+    z-index: 989;
+}
+
+.antennaBallOne{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    left: 345px;
+    top: 62px;
+    z-index: 990;
+}
+
+.antennaTwoInner{
+    position: absolute;
+    width: 21px;
+    height: 81px;
+    /* background-color: blue; */
+    overflow: hidden;
+    left: 399px;
+    top: 60px;
+    z-index: 989;
+}
+
+.antennaTwo{
+    width: 50px;
+    height: 75px;
+    border: 5px solid black;
+    /* background-color: white; */
+    border-radius: 44% 50%;
+    left: 399px;
+    top: 60px;
+    transform: rotate(190deg);
+    z-index: 989;
+}
+
+.antennaBallTwo{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    left: 400px;
+    top: 48px;
+    z-index: 990;
+}
+
