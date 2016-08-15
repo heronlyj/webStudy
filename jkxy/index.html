@@ -1,20 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>极客学院</title>
-        <meta charset="UTF-8">
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container-fluid">
-            <div id="title" class="container-fluid">
-                <div class="container heard">
-                    <a href="http://www.jikexueyuan.com/" class="logo">
-                        <img src="http://e.jikexueyuan.com/headerandfooter/images/logo.png" width="109" height="40">
+
+<head>
+    <title>极客学院</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="slider/themes/default/default.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="slider/themes/light/light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="slider/themes/dark/dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="slider/themes/bar/bar.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="slider/nivo-slider.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+</head>
+
+<body>
+    <!--包含整个页面, 大小与 body 相同-->
+    <div class="container-fluid">
+
+        <!--头部-->
+        <div class="header">
+            <!--头部居中的内容-->
+            <div class="container content">
+
+                <!--logo-->
+                <div class="logo_container">
+                    <a href="http://www.jikexueyuan.com" class="logo">
+                        <img src="http://e.jikexueyuan.com/headerandfooter/images/logo.png">
+                    </a>
+                </div>
+
+                <!--nav 的四个按钮-->
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="http://www.jikexueyuan.com" style="color: rgb(53, 181, 88);">首页</a>
+                        </li>
+                        <li>
+                            <a href="http://www.jikexueyuan.com">职业学院</a>
+                            <i class="arrow-icon"></i>
+                        </li>
+                        <li>
+                            <a href="http://www.jikexueyuan.com">会员课程</a>
+                        </li>
+                        <li>
+                            <a href="http://www.jikexueyuan.com">极客社区</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--header 的左边三个按钮-->
+                <div class="header_right">
+                    <span class="login-icon"></span>
+                    <span class="phone-icon"></span>
+                    <span class="search-icon"></span>
+                </div>
+            </div>
+            <hr id="headerBottom">
+
+        </div>
+
+        <!--header 下面的广告栏 横向滚动多张图片-->
+        <section class="container content banner_container">
+            <div class="col-xs-9 banner theme-default">
+                <div id="slider" class="nivoSlider">
+                    <a href="http://qun.jikexueyuan.com/activity/topic/505?huodong=banner_0727">
+                        <img src="img/slider1.jpg" data-thumb="img/slider1.jpg" alt="" />
+                    </a>
+                    <a href="http://gold.xitu.io/welcome/?utm_source=jikexueyuan&utm_medium=banner&utm_content=gaoshou&utm_campaign=q3_website">
+                        <img src="img/slider2.jpg" data-thumb="img/slider2.jpg" alt="" />
+                    </a>
+                    <a href="http://j.jikexueyuan.com/train/web?huodong=jiuye_web_shouye_banner_0910">
+                        <img src="img/slider3.jpg" data-thumb="img/slider3.jpg" alt="" />
+                    </a>
+                    <a href="http://www.jikexueyuan.com/zhiye/python?huodong=banner_0802">
+                        <img src="img/slider4.jpg" data-thumb="img/slider4.jpg" alt="" />
+                    </a>
+                    <a href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_shouye_banner">
+                        <img src="img/slider5.jpg" data-thumb="img/slider5.jpg" alt="" />
+                    </a>
+                    <a href="http://www.jikexueyuan.com/zhiye/go?huodong=banner_0802">
+                        <img src="img/slider6.jpg" data-thumb="img/slider6.jpg" alt="" />
                     </a>
                 </div>
             </div>
-        </div>
-    </body>
+
+            <div class="col-xs-3 banner_container_right">
+                <!--用户面板-->
+                <div class="user_panel">
+                    <div class="userInfo">
+                        <a href="http://my.jikexueyuan.com/setting/user">
+                            <img src="http://s1.jikexueyuan.com/index/images/headpic_8ce0f6d.jpg" class="userImg">
+                        </a>
+                        <span>Hello,</span>
+                        <span>欢迎成为极客一员</span>
+                    </div>
+                    <!--登录与注册按钮-->
+                    <a class="big_green_btn login_btn" href="">登录</a>
+                    <a class="big_green_btn register_btn" href="http://passport.jikexueyuan.com/sso/reg_phone">免费注册</a>
+                </div>
+                <div class="activity">
+                    <a href="http://www.baidu.com/cb.php?c=IgF_pyfqnHRdrjmknW60IZ0qnfK9ujYzn1DkPWRY0Aw-5HcYrHDdn1m0TAq15HcLPHmkPWb0T1YvnWT1uW7-myF9n1c3Pyfz0AwY5HDYP1DsrjDdPWf0IgF_5y9YIZ0lQzqBUAqMQhGGpvN3IyN4Iy78QhPEUitkQh9YUys0ThfqnH60mhYqnfKsTWYs0ZNGujY1PWfkPjcv0AqGujYknjDsPHm40APGujYvrjfYnfKEIv3qn0KsXHYznjm0mLFW5HR4Pjfs">
+                        <img src="http://ubmcmm.baidustatic.com/media/v1/0f0000I31efoOCeMMNwG30.jpg" title="" alt="" border="0" height="160" width="240">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--就业班模块-->
+        <section class="container content">
+            <div class="col-xs-12 class_for_work">
+                <a href="http://j.jikexueyuan.com/train/php?huodong=jiuye_php_in">
+                    <i></i>
+                    <!--i 用来增加角标-->
+                    PHP工程师就业班
+                </a>
+                <a href="http://j.jikexueyuan.com/train/web?huodong=jiuye_web_in">
+                         WEB大前端工程师就业班
+                    </a>
+                <a href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_in">
+                        Android工程师就业班
+                    </a>
+                <a href="http://j.jikexueyuan.com/train/ios?huodong=jiuye_ios_in">
+                        iOS工程师就业班
+                    </a>
+            </div>
+        </section>
+
+        <!--付费课程-->
+        <section class="container content pay_class">
+            <div class="col-xs-3">
+                <a href="http://www.jikexueyuan.com/zhiye/course/10.html?type=7">
+                    <img src="http://jiuye-res.jikexueyuan.com/zhiye/showcase/attach-815fe3cb-a6b2-4f97-ac18-b0172aa69b14.jpg">
+                    <div class="pay_class_detail">
+                        <p class="pay_class_title">Web前端实习生成长计划</p>
+                        <p class="pay_class_subTitle">64小时&nbsp;&nbsp;|&nbsp;&nbsp;5门课</p>
+                        <span class="pay_class_price">999.00</span>
+                        <span class="pay_class_originPrice">¥2000.00</span>
+                        <span class="pay_class_studentNumber">14人学习</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="http://www.jikexueyuan.com/zhiye/course/12.html?type=8">
+                    <img src="http://jiuye-res.jikexueyuan.com/zhiye/showcase/attach-6ae2b991-803f-4b63-bda9-89434d70d665.jpg">
+                    <div class="pay_class_detail">
+                        <p class="pay_class_title">Vue.js前端框架详解－基础&进阶&实战</p>
+                        <p class="pay_class_subTitle">13小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                        <span class="pay_class_price">499.00</span>
+                        <span class="pay_class_originPrice">¥1300.00</span>
+                        <span class="pay_class_studentNumber">13人学习</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="http://www.jikexueyuan.com/zhiye/course/18.html?type=4">
+                    <img src="http://jiuye-res.jikexueyuan.com/zhiye/showcase/attach-0da69660-4fcc-45d1-9b84-88271851f57f.jpg">
+                    <div class="pay_class_detail">
+                        <p class="pay_class_title">基于Python的静态爬虫实战</p>
+                        <p class="pay_class_subTitle">13小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                        <span class="pay_class_price">499.00</span>
+                        <span class="pay_class_originPrice">¥1000.00</span>
+                        <span class="pay_class_studentNumber">13人学习</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <a href="http://www.jikexueyuan.com/zhiye/course/22.html?type=6">
+                    <img src="http://jiuye-res.jikexueyuan.com/zhiye/showcase/attach-59b4a27d-e431-4f49-aa25-6b94cccd8229.jpg">
+                    <div class="pay_class_detail">
+                        <p class="pay_class_title">基于Go语言的短链接服务实战</p>
+                        <p class="pay_class_subTitle">10小时&nbsp;&nbsp;|&nbsp;&nbsp;1门课</p>
+                        <span class="pay_class_price">499.00</span>
+                        <span class="pay_class_originPrice">¥2000.00</span>
+                        <span class="pay_class_studentNumber">43人学习</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--职业学院-->
+        <section class="container content college">
+            <div class="col-xs-12 section_header">
+                <h2>职业学院</h2>
+            </div>
+            <div class="col-xs-6 college_big_title">
+                <a href="http://www.jikexueyuan.com/zhiye/web">
+                    <img src="http://s1.jikexueyuan.com/index/images/bgweb_054d9d5.jpg">
+                    <span>Web 前段工程师</span>
+                </a>
+            </div>
+            <div class="col-xs-3">
+                <div class="college_little_title">
+                    <a href="http://www.jikexueyuan.com/zhiye/python">
+                        <img src="http://s1.jikexueyuan.com/index/images/bgpython_c21a999.jpg">
+                        <span class="college_python">Python Web 工程师</span>
+                    </a>
+                </div>
+                <div class="college_little_title">
+                    <a href="http://www.jikexueyuan.com/zhiye/go">
+                        <img src="http://s1.jikexueyuan.com/index/images/bggo_6ac4e5b.jpg">
+                        <span class="college_go">GO 语言工程师</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="college_little_title">
+                    <a href="http://www.jikexueyuan.com/zhiye/ios">
+                        <img src="http://s1.jikexueyuan.com/index/images/bgios_cadb5b0.jpg">
+                        <span class="college_ios">iOS 工程师</span>
+                    </a>
+                </div>
+                <div class="college_little_title">
+                    <a class="disableHref">
+                        <img src="http://s1.jikexueyuan.com/index/images/bgmore_b32bab9.jpg">
+                        <span class="college_more">更多职业 敬请期待</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--会员课程-->
+        <section class="container content membership">
+            <div class="col-xs-12 section_header">
+                <h2>会员课程</h2>
+            </div>
+            <div class="col-xs-2 membership_android">
+                <a href="http://www.jikexueyuan.com/path/android">
+                    <img src="http://s1.jikexueyuan.com/index/images/1_android_d6730f3.png">
+                    <p>Android</p>
+                    <span>90门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_ios">
+                <a href="http://www.jikexueyuan.com/path/ios">
+                    <img src="http://s1.jikexueyuan.com/index/images/2_iOS_5e77ff4.png">
+                    <p>iOS</p>
+                    <span>51门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_swift">
+                <a href="http://www.jikexueyuan.com/path/swift">
+                    <img src="http://s1.jikexueyuan.com/index/images/3_swift_79f5d60.png">
+                    <p>Swift语言</p>
+                    <span>11门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_html">
+                <a href="http://www.jikexueyuan.com/path/html5">
+                    <img src="http://s1.jikexueyuan.com/index/images/4_html5_9ab5f1c.png">
+                    <p>HTML5开发</p>
+                    <span>116门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_js">
+                <a href="http://www.jikexueyuan.com/path/javascript">
+                    <img src="http://s1.jikexueyuan.com/index/images/5_javascript_83e4b7f.png">
+                    <p>JavaScript</p>
+                    <span>90门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_node">
+                <a href="http://www.jikexueyuan.com/path/nodejs">
+                    <img src="http://s1.jikexueyuan.com/index/images/6_js_c56bccc.png">
+                    <p>Node.js</p>
+                    <span>90门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_c">
+                <a href="http://www.jikexueyuan.com/path/c">
+                    <img src="http://s1.jikexueyuan.com/index/images/7_c_07f10c0.png">
+                    <p>C语言</p>
+                    <span>17门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_java">
+                <a href="http://www.jikexueyuan.com/path/java">
+                    <img src="http://s1.jikexueyuan.com/index/images/8_java_89b7c2c.png">
+                    <p>Java语言</p>
+                    <span>17门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_php">
+                <a href="http://www.jikexueyuan.com/path/php">
+                    <img src="http://s1.jikexueyuan.com/index/images/9_php_d5fcdb8.png">
+                    <p>PHP语言</p>
+                    <span>23门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_javaWeb">
+                <a href="http://www.jikexueyuan.com/path/javaweb">
+                    <img src="http://s1.jikexueyuan.com/index/images/10_javaweb_26f34e5.png">
+                    <p>JavaWeb</p>
+                    <span>64门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_python">
+                <a href="http://www.jikexueyuan.com/path/python">
+                    <img src="http://s1.jikexueyuan.com/index/images/11_Python_d253c3e.png">
+                    <p>Python</p>
+                    <span>38门课程</span>
+                </a>
+            </div>
+            <div class="col-xs-2 membership_cocoa2d">
+                <a href="http://www.jikexueyuan.com/path/cocos2d-x">
+                    <img src="http://s1.jikexueyuan.com/index/images/12_cocos2d_037cd04.png">
+                    <p>Cocos2d-x游戏开发</p>
+                    <span>89门课程</span>
+                </a>
+            </div>
+
+            <!--全部会员课程-->
+            <div class="col-xs-12 membership_all_class">
+                <a class="big_green_btn" href="http://www.jikexueyuan.com/course/">全部会员课程</a>
+            </div> 
+        </section>
+
+        <section class="container content studentStory">
+            <div class="col-xs-12 section_header">
+                <h2>学员故事</h2>
+            </div>
+        </section>
+
+        <!--<footer class="container content footer">
+            <div class="">
+                
+            </div>
+        </footer>-->
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="slider/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#slider').nivoSlider();
+        });
+    </script>
+
+</body>
+
 </html>

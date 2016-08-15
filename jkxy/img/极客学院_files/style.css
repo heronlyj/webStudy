@@ -472,36 +472,7 @@ body, html {
     width: 158px; 
     height: 150px;
     border: 1px solid #e2e1e1;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-.membership .col-xs-2 a img {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 55px;
-    height: 55px;
-    margin-top: 25px;
-    vertical-align: middle;
-    border: 0;
-}
-
-.membership .col-xs-2 a p {
-    display: block;
-    font-size: 12px;
-    color: #555;
-    height: 22px;
-    line-height: 22px;
-    box-sizing: border-box;
-    margin: 0;
-}
-
-.membership .col-xs-2 a span {
-    display: block;
-    font-size: 12px;
-    color: #35b558;
-    height: 22px;
-    line-height: 22px;
+    background: red;
 }
 
 .membership_android a {
@@ -510,59 +481,25 @@ body, html {
 .membership_ios a {
     left: 1.74px;
 }
-.membership_swift {
+
+/*.membership_c a {
+    left: 0;
+}*/
+/*
+.membership_ios .membership_java {
+    left: 1.74px;
+}
+.membership_swift .membership_php{
     left: 3.48px;
 }
-.membership_html a {
+.membership_html .membership_javaWeb {
     left: 5.22px;
 }
-.membership_js a {
+.membership_js .membership_python {
     left: 6.96px;    
 }
-.membership_node a{
+.membership_node .membership_cocoa2d {
+    left: 8.7px;
     right: 0;
-}
-.membership_c a {
-    left: 0;
-    bottom: 0;
-}
-.membership_java a {
-    left: 1.74px;
-    bottom: 0;
-}
-.membership_php a{
-    left: 3.48px;
-    bottom: 0;
-}
-.membership_javaWeb a {
-    left: 5.22px;
-    bottom: 0;
-}
-.membership_python a {
-    left: 6.96px;
-    bottom: 0;    
-}
-.membership_cocoa2d a {
-    right: 0;
-    bottom: 0;
-}
+}*/
 
-.membership_all_class {
-    height: 70px;
-    position: relative;
-}
-
-.membership_all_class a {
-    width: 118px;
-    height: 30px;
-    left: 50%;
-    position: absolute;
-    margin-left: -59px;
-    margin-top: 38px;
-    border: 1px solid #35b558;
-    border-radius: 2px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 14px;
-    color: #35b558;
-}
