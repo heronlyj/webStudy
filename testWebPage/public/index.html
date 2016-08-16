@@ -1,155 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>极客学院</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="slider/themes/default/default.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="slider/themes/light/light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="slider/themes/dark/dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="slider/themes/bar/bar.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="slider/nivo-slider.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<meta charset="utf-8" />
+	<!--响应式布局-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>百度一下，你就知道</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <!--包含整个页面, 大小与 body 相同-->
-    <div class="container-fluid">
+	<div class="container">
 
-        <!--头部-->
-        <div class="header">
-            <!--头部居中的内容-->
-            <div class="container content">
+		<nav class="header">
+			<!--响应式 屏幕小于800之后显示-->
+			<div class="userInfo_wrap">
+				<!--温度-->
+				<div class="weather-num">35°</div>
+				<!--地区与空气质量-->
+				<div class="weather-status">
+					<p>武汉</p>
+					<p>空气&nbsp;72</p>
+				</div>
+			</div>
 
-                <!--logo-->
-                <div class="logo_container">
-                    <a href="http://www.jikexueyuan.com" class="logo">
-                        <img src="http://e.jikexueyuan.com/headerandfooter/images/logo.png">
-                    </a>
-                </div>
+			<div class="links_wrap">
+				<div class="baidu_links">
+					<a href="http://www.nuomi.com/?cid=002540">糯米</a>
+					<a href="http://news.baidu.com">新闻</a>
+					<a href="http://www.hao123.com">hao123</a>
+					<a href="http://map.baidu.com">地图</a>
+					<a href="http://v.baidu.com">视频</a>
+					<a href="http://tieba.baidu.com">贴吧</a>
+					<a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" name="tj_login" onclick="return false;">登录</a>
+					<a href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+				</div>
+				<div class="more_btn">
+					<a href="http://www.baidu.com/more/">更多产品</a>
+				</div>
+			</div>
 
-                <!--nav 的四个按钮-->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="http://www.jikexueyuan.com" style="color: rgb(53, 181, 88);">首页</a>
-                        </li>
-                        <li>
-                            <a href="http://www.jikexueyuan.com">职业学院</a>
-                            <i class="arrow-icon"></i>
-                        </li>
-                        <li>
-                            <a href="http://www.jikexueyuan.com">会员课程</a>
-                        </li>
-                        <li>
-                            <a href="http://www.jikexueyuan.com">极客社区</a>
-                        </li>
-                    </ul>
-                </nav>
+			<div class="header_sub_wrap">
+				<div>
+					<span class="sub_menu"></span>
+				</div>
+				<div>
+					<span class="sub_setting" ></span>
+				</div>
+				<div>
+					<span class="sub_login"></span>
+				</div>	
+			</div>
 
-                <!--header 的左边三个按钮-->
-                <div class="header_right">
-                    <span class="login-icon"></span>
-                    <span class="phone-icon"></span>
-                    <span class="search-icon"></span>
-                </div>
-            </div>
-            <hr id="headerBottom">
+		</nav>
 
-        </div>
-        
-         <!--header 下面的广告栏 横向滚动多张图片-->
-            <section class="container content banner_container">
-                <div class="col-xs-9 banner theme-default">
-                    <div id="slider" class="nivoSlider">
-                        <a href="http://qun.jikexueyuan.com/activity/topic/505?huodong=banner_0727">
-                            <img src="img/slider1.jpg" data-thumb="img/slider1.jpg" alt="" />
-                        </a>
-                        <a href="http://gold.xitu.io/welcome/?utm_source=jikexueyuan&utm_medium=banner&utm_content=gaoshou&utm_campaign=q3_website">
-                            <img src="img/slider2.jpg" data-thumb="img/slider2.jpg" alt="" />
-                        </a>
-                        <a href="http://j.jikexueyuan.com/train/web?huodong=jiuye_web_shouye_banner_0910">
-                            <img src="img/slider3.jpg" data-thumb="img/slider3.jpg" alt="" />
-                        </a>
-                        <a href="http://www.jikexueyuan.com/zhiye/python?huodong=banner_0802">
-                            <img src="img/slider4.jpg" data-thumb="img/slider4.jpg" alt="" />
-                        </a>
-                        <a href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_shouye_banner">
-                            <img src="img/slider5.jpg" data-thumb="img/slider5.jpg" alt="" />
-                        </a>
-                        <a href="http://www.jikexueyuan.com/zhiye/go?huodong=banner_0802">
-                            <img src="img/slider6.jpg" data-thumb="img/slider6.jpg" alt="" />
-                        </a>
-                    </div>
-                </div>
 
-                <div class="col-xs-3 banner_container_right">
-                    <!--用户面板-->
-                    <div class="user_panel">
-                        <div class="userInfo">
-                            <a href="http://my.jikexueyuan.com/setting/user">
-                                <img src="http://s1.jikexueyuan.com/index/images/headpic_8ce0f6d.jpg" class="userImg">
-                            </a>
-                            <span>Hello,</span>
-                            <span>欢迎成为极客一员</span>
-                        </div>
-                        <!--登录与注册按钮-->
-                        <a class="big_green_btn login_btn" href="">登录</a>
-                        <a class="big_green_btn register_btn" href="http://passport.jikexueyuan.com/sso/reg_phone">免费注册</a>
-                    </div>
-                    <div class="activity">
-                        <a href="http://www.baidu.com/cb.php?c=IgF_pyfqnHRdrjmknW60IZ0qnfK9ujYzn1DkPWRY0Aw-5HcYrHDdn1m0TAq15HcLPHmkPWb0T1YvnWT1uW7-myF9n1c3Pyfz0AwY5HDYP1DsrjDdPWf0IgF_5y9YIZ0lQzqBUAqMQhGGpvN3IyN4Iy78QhPEUitkQh9YUys0ThfqnH60mhYqnfKsTWYs0ZNGujY1PWfkPjcv0AqGujYknjDsPHm40APGujYvrjfYnfKEIv3qn0KsXHYznjm0mLFW5HR4Pjfs">
-                            <img src="http://ubmcmm.baidustatic.com/media/v1/0f0000I31efoOCeMMNwG30.jpg" title="" alt="" border="0" height="160" width="240">
-                        </a>
-                    </div>
-                </div>
-            </section>
-            
-            <!--就业班模块-->
-            <section class="container content">
-                <div class="col-xs-12 class_for_work">
-                    <a href="http://j.jikexueyuan.com/train/php?huodong=jiuye_php_in">
-                        <!--i 用来增加角标-->
-                        <i></i>PHP工程师就业班
-                    </a>
-                    <a href="http://j.jikexueyuan.com/train/web?huodong=jiuye_web_in">
-                         WEB大前端工程师就业班
-                    </a>
-                    <a href="http://j.jikexueyuan.com/train/android?huodong=jiuye_android_in">
-                        Android工程师就业班
-                    </a>
-                    <a href="http://j.jikexueyuan.com/train/ios?huodong=jiuye_ios_in">
-                        iOS工程师就业班
-                    </a>    
-                </div>
-            </section>
+		<div class="search">
 
-            <!--付费课程-->
-            <section class="container content pay_class">
-                <div class="col-xs-3">
-                    <a href=""></a>
-                </div>
-                <div class="col-xs-3">
-                    <a href=""></a>
-                </div>
-                <div class="col-xs-3">
-                    <a href=""></a>
-                </div>
-                <div class="col-xs-3">
-                    <a href=""></a>
-                </div>
-            </section>
+			<img hidefocus="true" id="img_logo" src="img/bd_logo1.png" />
 
-    </div>
+			<div class="input_div">
+				<form action="" method="post">
+					<span class="input_border">
+						<input type="text" name="keyword" id="search_input" />
+						<span class="ipt_rec"></span>
+						<span class="soutu-btn"></span>
+					</span>
+					<input type="button" name="百度一下" id="baidu_button" value="百度一下" />
+				</form>
 
-    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="slider/jquery.nivo.slider.js"></script>
-    <script type="text/javascript">
-        $(window).load(function() {
-            $('#slider').nivoSlider();
-        });
-    </script>
+			</div>
+
+		</div>
+
+
+		<footer class="footer">
+
+			<div id="bottom_left">
+				<div>
+					<div class="bottom_rq">
+						<img src="img/zbios_62c636fe.png" />
+					</div>
+					<div class="bottom_font">
+						<p>手机百度</p>
+						<p class="subTitle">快人一步</p>
+					</div>
+				</div>
+
+				<div id="bottom_block">&nbsp;</div>
+				<div>
+					<div class="bottom_rq">
+						<img src="img/nuomi_510f7472.png" />
+					</div>
+					<div class="bottom_font">
+						<p>百度糯米</p>
+						<p class="subTitle">一元大餐</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="bottom_riglt">
+				<p id="bottom_right_p_l">
+					<a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://home.baidu.com/">关于百度</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://ir.baidu.com/">About  Baidu</a></p>
+				<p id="bottom_right_p">©2016 Baidu <a href="http://www.baidu.com/duty/">使用百度前必读</a> <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号</p>
+				<p id="bottom_right_p_r">京公网安备11000002000001号</p>
+			</div>
+		</footer>
+
+	</div>
 
 </body>
 
