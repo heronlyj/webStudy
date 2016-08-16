@@ -1,0 +1,25 @@
+﻿
+/*登录页面样式*/
+.login_container {
+    margin-top: 50px;
+    min-width: 300px;
+}
+
+.login_container .form {
+    position: relative;
+}
+
+.login_container h3 {
+    text-align: center;
+}
+
+.login_btn {
+    width: 60px;
+    margin-left: 50%;
+    left: -30px;
+    position: absolute;
+}
+
+.login_container hr {
+    margin-top: 70px;
+}
