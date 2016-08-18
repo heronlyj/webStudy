@@ -2,6 +2,165 @@
     display: none;
 }
 
+.phone_container {
+    min-width: 320px;
+    background: #f1f1f1;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
 header {
     margin: 0;
+    position: relative;
+}
+
+/*左上角的天气区域*/
+.userInfo_wrap {
+    display: inline-block;
+}
+
+.userInfo_wrap div {
+    float: left;
+}
+
+.weather_font_icon {
+    color: #b7babe;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    width: auto;
+    line-height: 35px;
+    margin-left: -1px;
+}
+
+.weather-num {
+    font-size: 20px;
+    color: #8c8c8c;
+    padding-left: 2px;
+    line-height: 40px;
+}
+
+.weather-status p {
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #999;
+}
+
+.weather-status p:first-child {
+    margin-top: 7px;
+}
+
+.loginInfo_wrap {
+    display: inline-block;
+    position: absolute;
+    margin-left: 100%;
+    width: 50px;
+    left: -50px;
+}
+
+
+/*中间的搜索区域*/
+.search_area {
+    text-align: center;
+}
+
+.baidu_logo img {
+    margin: auto;
+}
+
+.input_area {
+    margin: 15px 0;
+    padding: 0;
+}
+
+.input_border {
+    margin: 0;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #949494;
+    border-bottom-color: #bcbcbc;
+    text-align: left;
+    position: relative;
+}
+
+#baidu_btn {
+    float: right;
+    width: 82px;
+    height: 42px;
+    background: #38f;
+    color: #fff;
+    line-height: 42px;
+    font-size: 16px;
+    border: 1px solid #38f;
+    padding: 0;
+    position: absolute;
+    left: 100%;
+    margin-left: -81px;
+    top: -1px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.input_container {
+    margin-right: 81px;
+    height: 100%;
+}
+
+#baidu_input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 3px 10px;
+    outline-style: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*#baidu_input:focus {
+    border: 1px solid #38f;
+}*/
+
+.navs {
+    padding: 0;
+}
+
+.navs div {
+    padding: 0;
+}
+
+.navs a {
+    color: #666;
+}
+
+.navs i {
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    width: 100%;
+    line-height: 35px;
+    margin-left: -1px;
+}
+
+
+/*下面的填充部分*/
+
+.fill_blank {
+    margin-top: 30px;
+}
+
+/*底部*/
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 12px;
 }

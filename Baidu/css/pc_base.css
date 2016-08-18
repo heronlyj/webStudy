@@ -142,7 +142,7 @@ html, body {
 	position: relative;
 	height: 191px;
 	width: 100%;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 /*百度logo*/
@@ -179,9 +179,9 @@ html, body {
 	position: relative; 
 }
 
-.input_border:hover {
+/*.input_border:hover {
 	border-color: ;
-}
+}*/
 
 /*搜索输入框*/
 #search_input {
