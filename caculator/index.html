@@ -6,71 +6,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    
+
 </head>
 
 <body>
 
+    <!--容器-->
     <div class="container">
-        
+
         <!--计算器-->
-        <div class="caculatorPlate">
+        <div id="buttonWrap" class="caculatorPlate">
 
-            <!--第一行-->
-            <!--结果显示区域-->
-            <div class="lcd"></div>
-
-            <!--第二行-->
-            <!-- AC -->
-            <div class="square ac"></div>
-            <!-- -/+ -->
-            <div class="square sign"></div>
-            <!-- % -->
-            <div class="square percent"></div>
-            <!-- / -->
-            <div class="square divide operator"></div>
-
-            <!--第三行-->
-            <!-- 7 -->
-            <div class="square"></div>
-            <!-- 8 -->
-            <div class="square"></div>
-            <!-- 9 -->
-            <div class="square"></div>
-            <!-- x -->
-            <div class="square operator"></div>
-
-            <!--第四行-->
-            <!-- 4 -->
-            <div class="square"></div>
-            <!-- 5 -->
-            <div class="square"></div>
-            <!-- 6 -->
-            <div class="square"></div>
-            <!-- - -->
-            <div class="square operator"></div>
-
-            <!--第五行-->
-            <!-- 1 -->
-            <div class="square"></div>
-            <!-- 2 -->
-            <div class="square"></div>
-            <!-- 3 -->
-            <div class="square"></div>
-            <!-- + -->
-            <div class="square operator"></div>
-
-            <!--第六行-->
-            <!-- 0 -->
-            <div class="zero"></div>
-            <!-- dot -->
-            <div class="square"></div>
-            <!-- = -->
-            <div class="square operator"></div>
+            <!--显示结果-->
+            <div class="lcd">0</div>
+            
+            <!--按钮-->
+            <button class="square ac" type="" value="ac" >AC</button>
+            <button class="square sign" type="" value="-/+" >-/+</button>
+            <button class="square percent" type="" value="%" >%</button>
+            <button class="square divide operator" type="" value="/" >/</button>
+            <button class="square" type="" value="7" >7</button>
+            <button class="square" type="" value="8" >8</button>
+            <button class="square" type="" value="9" >9</button>
+            <button class="square operator" type="" value="x" >X</button>
+            <button class="square" type="" value="4" >4</button>
+            <button class="square" type="" value="5" >5</button>
+            <button class="square" type="" value="6" >6</button>
+            <button class="square operator" type="" value="-" >-</button>
+            <button class="square" type="" value="1" >1</button>
+            <button class="square" type="" value="2" >2</button>
+            <button class="square" type="" value="3" >3</button>
+            <button class="square operator" type="" value="+" >+</button>
+            <button class="zero" type="" value="0" >0</button>
+            <button class="square" type="" value="." >.</button>
+            <button class="square operator" type="" value="=" >=</button>
 
         </div>
 
     </div>
+
+    <script src="js/index.js" type="text/javascript"></script>
 
 </body>
 
