@@ -16,27 +16,27 @@ var showResult = function(operatorResult) {
     lcd.innerText = operatorResult;
 
     var uncomplete = document.getElementById("uncomplete");
-    if (method == "") {
+    if (method === "") {
         uncomplete.innerText = "";   
     } else {
-        uncomplete.innerText = x.toString() + " " + method + " " + (y == 0 ? "" : y.toString());
+        uncomplete.innerText = x.toString() + " " + method + " " + (y === 0 ? "" : y.toString());
     }
 }
 
 // 计算
 var calcuateFunc = function(a,operatorMethod,b) {
     switch(true) {
-        case operatorMethod == "+":
+        case operatorMethod === "+":
             return a + b;
 
-        case operatorMethod == "-":
+        case operatorMethod === "-":
             return a - b;
 
-        case operatorMethod == "x":
+        case operatorMethod === "x":
             return a*b;
 
-        case operatorMethod == "/":
-            return b == 0 ? a : a/b;
+        case operatorMethod === "/":
+            return b === 0 ? NaN : a/b;
 
         default: 
             return a;
@@ -49,20 +49,20 @@ var matchMethod = function(value) {
  // 匹配按钮
     switch(true) {
         case 
-            value == "0" || 
-            value == "1" || 
-            value == "2" || 
-            value == "3" || 
-            value == "4" || 
-            value == "5" || 
-            value == "6" || 
-            value == "7" ||
-            value == "8" ||
-            value == "9" :
+            value === "0" || 
+            value === "1" || 
+            value === "2" || 
+            value === "3" || 
+            value === "4" || 
+            value === "5" || 
+            value === "6" || 
+            value === "7" ||
+            value === "8" ||
+            value === "9" :
 
-            if (method == "") {
+            if (method === "") {
                 // 如果不存在运算符更新第一个算子
-                if (dotNumber == 0) {
+                if (dotNumber === 0) {
                     x = 10*x + parseInt(value);    
                 } else {
                     x = x + parseInt(value) * dotNumber;
@@ -72,7 +72,7 @@ var matchMethod = function(value) {
                 showResult(x);
             } else {
                 // 更新第二个算子
-                if (dotNumber == 0) {
+                if (dotNumber === 0) {
                     y = 10*y + parseInt(value);
                 } else {
                     y = y + parseInt(value) * dotNumber;
@@ -85,11 +85,11 @@ var matchMethod = function(value) {
             console.log("输入的是数字" + value);
             break;
 
-        case value == "+" ||  value == "-" || value == "x" || value == "/":
+        case value === "+" ||  value === "-" || value === "x" || value === "/":
 
             dotNumber = 0;
 
-            if (method == "" || y == "") {
+            if (method === "" || y === "") {
                 method = value;
             } else  {
                 x = calcuateFunc(x, method, y);
@@ -101,14 +101,14 @@ var matchMethod = function(value) {
             console.log("加减乘除");
             break;
 
-        case value == ".":
-            if (dotNumber == 0) {
+        case value === ".":
+            if (dotNumber === 0) {
                 dotNumber = 0.1;
             }
             console.log("输入了小数点,后面的数字为小数");
             break;
 
-        case value == "ac":
+        case value === "ac":
             x = 0;
             y = 0;
             dotNumber = 0;
@@ -117,9 +117,9 @@ var matchMethod = function(value) {
             console.log("清零运算"); 
             break;
 
-        case value == "%":
+        case value === "%":
 
-            if (method == "") {
+            if (method === "") {
                 x = x/100;
                 showResult(x);
             } else {
@@ -129,9 +129,9 @@ var matchMethod = function(value) {
             console.log("求百分之一");
             break;
 
-        case value == "-/+":
+        case value === "-/+":
 
-            if (method == "") {
+            if (method === "") {
                 x = -x;
                 showResult(x);
             } else {
@@ -141,7 +141,7 @@ var matchMethod = function(value) {
             console.log("求相反数");
             break;
 
-        case value == "=":
+        case value === "=":
             x = calcuateFunc(x, method, y);
             method = "";
             y = 0;
