@@ -9,3 +9,15 @@ for (var i = 0; i < children.length; i++) {
         }
     }
 }
+
+
+var btn = document.getElementById("btn");
+
+btn.onclick = function() {
+    alert("按钮点击");
+};
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+    
+}
