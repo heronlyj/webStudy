@@ -37,7 +37,7 @@ var calcuateFunc = function(a,operatorMethod,b) {
 
         case operatorMethod === "/":
             // 调整精度 与 NaN 的情况
-            return b === 0 ? NaN : parseFloat((a/b).toFixed(8));
+            return b === 0 ? NaN : parseFloat((a/b).toFixed(3));
 
         default: 
             return a;
