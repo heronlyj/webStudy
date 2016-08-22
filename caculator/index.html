@@ -11,6 +11,26 @@
 
 <body>
 
+    <script>
+        var arr = ["a","x","b","d","m","a","k","m","p","j","a"];
+
+        var result = new Object();
+
+        for (var i = 0; i < arr.length; i++) {
+            var temp = arr[i];
+            var index = arr.indexOf(temp);
+
+            if (temp in result) {
+                var tempArr = result[temp];
+                tempArr.push(index);
+            } else {
+                result[temp] = [index];
+            }
+        }
+
+        alert(result);
+    </script>
+
     <!--容器-->
     <div class="container">
 
@@ -21,27 +41,27 @@
             <div id="uncomplete" class="uncomplete"></div>
             <!--显示结果-->
             <div id="lcd" class="lcd">0</div>
-            
+
             <!--按钮-->
-            <button class="square ac" type="" value="ac" >AC</button>
-            <button class="square sign" type="" value="-/+" >-/+</button>
-            <button class="square percent" type="" value="%" >%</button>
-            <button class="square divide operator" type="" value="/" >/</button>
-            <button class="square" type="" value="7" >7</button>
-            <button class="square" type="" value="8" >8</button>
-            <button class="square" type="" value="9" >9</button>
-            <button class="square operator" type="" value="x" >x</button>
-            <button class="square" type="" value="4" >4</button>
-            <button class="square" type="" value="5" >5</button>
-            <button class="square" type="" value="6" >6</button>
-            <button class="square operator" type="" value="-" >-</button>
-            <button class="square" type="" value="1" >1</button>
-            <button class="square" type="" value="2" >2</button>
-            <button class="square" type="" value="3" >3</button>
-            <button class="square operator" type="" value="+" >+</button>
-            <button class="zero" type="" value="0" >0</button>
-            <button class="square" type="" value="." >.</button>
-            <button class="square operator" type="" value="=" >=</button>
+            <button class="square ac" type="" value="ac">AC</button>
+            <button class="square sign" type="" value="-/+">-/+</button>
+            <button class="square percent" type="" value="%">%</button>
+            <button class="square divide operator" type="" value="/">/</button>
+            <button class="square" type="" value="7">7</button>
+            <button class="square" type="" value="8">8</button>
+            <button class="square" type="" value="9">9</button>
+            <button class="square operator" type="" value="x">x</button>
+            <button class="square" type="" value="4">4</button>
+            <button class="square" type="" value="5">5</button>
+            <button class="square" type="" value="6">6</button>
+            <button class="square operator" type="" value="-">-</button>
+            <button class="square" type="" value="1">1</button>
+            <button class="square" type="" value="2">2</button>
+            <button class="square" type="" value="3">3</button>
+            <button class="square operator" type="" value="+">+</button>
+            <button class="zero" type="" value="0">0</button>
+            <button class="square" type="" value=".">.</button>
+            <button class="square operator" type="" value="=">=</button>
 
         </div>
 
