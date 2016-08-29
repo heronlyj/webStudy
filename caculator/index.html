@@ -10,27 +10,6 @@
 </head>
 
 <body>
-
-    <script>
-        var arr = ["a","x","b","d","m","a","k","m","p","j","a"];
-
-        var result = new Object();
-
-        for (var i = 0; i < arr.length; i++) {
-            var temp = arr[i];
-            var index = arr.indexOf(temp);
-
-            if (temp in result) {
-                var tempArr = result[temp];
-                tempArr.push(index);
-            } else {
-                result[temp] = [index];
-            }
-        }
-
-        alert(result);
-    </script>
-
     <!--容器-->
     <div class="container">
 
