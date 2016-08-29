@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+    <button id="myButton" class="btn btn-default" type="submit">Button</button>
+
+    <script src="js/jquery-3.1.0.js"></script>
+    <script type="text/javascript">
     
-    </body>
+        // $('#myButton').on('show.bs.modal', function (e) {
+        //     if (!data) return e.preventDefault() // 阻止模态框的展示
+        //     // alert("dianji");
+        // })
+
+        $("#myButton").on("click", function(event) {
+            // alert($(this).text());
+            alert("点击");
+        });
+    </script>
+</body>
+
 </html>
