@@ -1,115 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<!--响应式布局-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>百度一下，你就知道</title>
-	<link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>计算器</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-	<div class="container">
+    <!--容器-->
+    <div class="container">
 
-		<nav class="header">
-			<!--响应式 屏幕小于800之后显示-->
-			<div class="userInfo_wrap">
-				<!--温度-->
-				<div class="weather-num">35°</div>
-				<!--地区与空气质量-->
-				<div class="weather-status">
-					<p>武汉</p>
-					<p>空气&nbsp;72</p>
-				</div>
-			</div>
+        <!--计算器-->
+        <div id="buttonWrap" class="caculatorPlate">
 
-			<div class="links_wrap">
-				<div class="baidu_links">
-					<a href="http://www.nuomi.com/?cid=002540">糯米</a>
-					<a href="http://news.baidu.com">新闻</a>
-					<a href="http://www.hao123.com">hao123</a>
-					<a href="http://map.baidu.com">地图</a>
-					<a href="http://v.baidu.com">视频</a>
-					<a href="http://tieba.baidu.com">贴吧</a>
-					<a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" name="tj_login" onclick="return false;">登录</a>
-					<a href="http://www.baidu.com/gaoji/preferences.html">设置</a>
-				</div>
-				<div class="more_btn">
-					<a href="http://www.baidu.com/more/">更多产品</a>
-				</div>
-			</div>
+            <!--显示公式-->
+            <div id="uncomplete" class="uncomplete"></div>
+            <!--显示结果-->
+            <div id="lcd" class="lcd">0</div>
 
-			<div class="header_sub_wrap">
-				<div>
-					<span class="sub_menu"></span>
-				</div>
-				<div>
-					<span class="sub_setting" ></span>
-				</div>
-				<div>
-					<span class="sub_login"></span>
-				</div>	
-			</div>
+            <!--按钮-->
+            <button class="square" type="" value="sin">sin</button>
+            <button class="square" type="" value="cos">cos</button>
+            <button class="square" type="" value="tan">tan</button>
+            <button class="square operator" type="" value="cot">cot</button>
+            <button class="square ac" type="" value="ac">AC</button>
+            <button class="square sign" type="" value="-/+">+/-</button>
+            <button class="square percent" type="" value="%">%</button>
+            <button class="square divide operator" type="" value="/">/</button>
+            <button class="square" type="" value="7">7</button>
+            <button class="square" type="" value="8">8</button>
+            <button class="square" type="" value="9">9</button>
+            <button class="square operator" type="" value="x">x</button>
+            <button class="square" type="" value="4">4</button>
+            <button class="square" type="" value="5">5</button>
+            <button class="square" type="" value="6">6</button>
+            <button class="square operator" type="" value="-">-</button>
+            <button class="square" type="" value="1">1</button>
+            <button class="square" type="" value="2">2</button>
+            <button class="square" type="" value="3">3</button>
+            <button class="square operator" type="" value="+">+</button>
+            <button class="zero" type="" value="0">0</button>
+            <button class="square" type="" value=".">.</button>
+            <button class="square operator" type="" value="=">=</button>
+            
+        </div>
 
-		</nav>
+    </div>
 
-
-		<div class="search">
-
-			<img hidefocus="true" id="img_logo" src="img/bd_logo1.png" />
-
-			<div class="input_div">
-				<form action="" method="post">
-					<span class="input_border">
-						<input type="text" name="keyword" id="search_input" />
-						<span class="ipt_rec"></span>
-						<span class="soutu-btn"></span>
-					</span>
-					<input type="button" name="百度一下" id="baidu_button" value="百度一下" />
-				</form>
-
-			</div>
-
-		</div>
-
-
-		<footer class="footer">
-
-			<div id="bottom_left">
-				<div>
-					<div class="bottom_rq">
-						<img src="img/zbios_62c636fe.png" />
-					</div>
-					<div class="bottom_font">
-						<p>手机百度</p>
-						<p class="subTitle">快人一步</p>
-					</div>
-				</div>
-
-				<div id="bottom_block">&nbsp;</div>
-				<div>
-					<div class="bottom_rq">
-						<img src="img/nuomi_510f7472.png" />
-					</div>
-					<div class="bottom_font">
-						<p>百度糯米</p>
-						<p class="subTitle">一元大餐</p>
-					</div>
-				</div>
-			</div>
-
-			<div id="bottom_riglt">
-				<p id="bottom_right_p_l">
-					<a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="http://home.baidu.com/">关于百度</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="http://ir.baidu.com/">About  Baidu</a></p>
-				<p id="bottom_right_p">©2016 Baidu <a href="http://www.baidu.com/duty/">使用百度前必读</a> <a href="http://jianyi.baidu.com/">意见反馈</a> 京ICP证030173号</p>
-				<p id="bottom_right_p_r">京公网安备11000002000001号</p>
-			</div>
-		</footer>
-
-	</div>
+    <script src="js/jquery-3.1.0.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
 
 </body>
 
