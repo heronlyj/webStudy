@@ -1,15 +1,31 @@
-/** {
+
+/*************************************************/
+a:link { 
+    text-decoration: none;
+}
+a:active { 
+    text-decoration:none
+}
+a:hover { 
+    text-decoration:none;
+    color: #ffffff; 
+} 
+a:visited { 
+    text-decoration: none; 
+}
+ul {
     margin: 0;
     padding: 0;
-}*/
+}
+/*************************************************/
 
 .container-fluid {
     padding: 0;
 }
 
 .container {
-    width: 1000px;
-    max-width: 1000px; 
+    width: 990px !important;
+    /*max-width: 990px; */
     padding: 0;
 }
 
@@ -17,10 +33,26 @@
     margin: 0;
 }
 
+.headerBackground {
+    position: absolute;
+    width: 100%;
+    height: 61px;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid #ccc;
+    opacity: .2;
+}
+
+/*************************************************/
 /*header*/
 .headerRow {
     height: 60px;
 }
+
+/*header 下面增加一个横线*/
+/*header {
+    border-bottom: 1px solid #ccc;
+}*/
 
 .headerRow .col-lg-12 {
     padding: 0;
@@ -31,7 +63,6 @@
 .headerLogo {
     display: block;
     float: left;
-    /*position: absolute;*/
     width: 168px;
     left: 0;
     top: 0;
@@ -48,9 +79,9 @@
     text-align: center;
     margin-top: 12px;
     padding: 2px;
-    border-radius: 3px;
+    border-radius: 2px;
     background-color: #07ac72;
-    color: white;
+    color: #ffffff;
     font-size: 12px;
 }
 
@@ -58,13 +89,166 @@
 .headerWether {
     display: block;
     float: left;
-    width: 300px;
+    padding: 0 10px;
+    /*margin-left: 20px;*/
     font-size: 12px;
-    height: 100%;
+    height: 60px;
+    line-height: 60px;
 }
 
 .wetherSeletedCity {
     display: block;
-    height: 100%;
-    width: 30px;
+    float: left;
+    height: 60px;
 }
+
+.wetherCityName {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+}
+
+.wetherCityName span {
+    display: block;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+
+.wetherTemperature {
+    margin-left: 10px;
+}
+
+/*日历 星座*/
+.wetherCityWaper, .headerCalender, .headerHoroscope {
+    display: block;
+    float: left;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+    font-size: 12px;
+}
+
+.userInfo {
+    display: block;
+    float: right;
+    height: 60px;
+}
+
+.browser, .email, .cloudDisk, .login {
+    display: block;
+    float: right;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    color: #999;
+    font-size: 12px;
+}
+
+/*************************************************/
+
+.search {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.searchBody {
+    /*background-color: lightgray;*/
+    height: 60px;
+}
+
+/*baiduLog*/
+.baiduLink {
+    display: block;
+    float: left;
+    height: 100%;
+    widows: 120px;
+    padding-top: 18px;
+}
+
+.baiduLinkLogo {
+    display: block;
+    width: 120px;
+    height: 40px;
+    /*background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/0W/zO/-A/q4/0Z/4/index_widthlg.png) -10px -212px no-repeat;*/
+    background: url(../img/index_widthlg.png) -10px -212px no-repeat;
+}
+
+/*baiduInput*/
+.baiduSearchDiv {
+    display: block;
+    float: left;
+    width: 530px;
+    height: 46px;
+    margin: 14px 0 0 20px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*div*/
+.searchType {
+    display: block;
+    float: left;
+    width: 58px;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 8px;
+}
+
+/*a*/
+.searchTypeName {
+    display: block;
+    float: left;
+    font-size: 12px;
+    color: #999;
+}
+
+.searchTypeName:hover {
+    color: #999;
+}
+
+/*百度一下按钮*/
+.searchBtn {
+    display: block;
+    float: left;
+    width: 120px;
+    height: 46px;
+    margin-top: 14px;
+    background: url(../img/index_widthlg.png) no-repeat -211px -180px;
+}
+
+.searchBtn:hover {
+    background: url(../img/index_widthlg.png) no-repeat -211px -230px;
+}
+
+/*************************************************/
+/*支持 hover 的 div 效果*/
+.hoverDiv {
+    cursor: pointer;
+}
+
+.hoverDiv:hover {
+    background-color:#f7f7f8;
+}
+
+.hoverDiv a {
+    line-height: 60px;
+    color: #999;
+    font-size: 12px;
+}
+
+button {
+    border: 0;
+    outline:none;
+}
+
+button:active {
+    background-color: black;
+    outline:none;
+}
+/*************************************************/

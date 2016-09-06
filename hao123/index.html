@@ -4,7 +4,6 @@
 <head>
     <title>hao123</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,41 +13,104 @@
     <div class="container-fluid bodyContainer">
 
         <!--header-->
+        <div class="headerBackground"></div>
         <header class="container-fluid">
-            <div class="container">
-                <div class="row headerRow">
-                    <div class="col-lg-12">
 
+            <div class="container headerRow">
+
+                <div class="row headerRow">
+                    <div class="col-xs-12">
+                        <!--logo-->
                         <a class="headerLogo" href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.hao123.com%2Fsethome&&c=FE5AD38E285B012D3B43FE2A6DA9F1A7">
                             <img src="img/hao123Logo.png" alt="">
                         </a>
-
+                        <!--设为首页-->
                         <a class="settingHomePage" href="">
                             <span>设为首页</span>
                         </a>
+                        <!--天气-->
+                        <ul class="headerWether">
 
-                        <div class="headerWether">
+                            <li class="wetherCityWaper hoverDiv dropdown">
+                                <a id="dropdownMenu1" class="wetherSeletedCity">
+                            武汉
+                            <span class="glyphicon glyphicon-chevron-down wetherCityArraw"></span>
+                        </a> &nbsp;&nbsp;轻
+                                <span class="glyphicon glyphicon-cloud"></span> 多云 32~23℃
 
-                            <a href="wetherSeletedCity">
-                                <span class="wetherCityName">武汉</span>
-                                <span class="wetherCityArraw"></span>
-                            </a>
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                </ul>
+                            </li>
 
-                            <a href="">
+                            <!--日历-->
+                            <li class="headerCalender hoverDiv">
+                                <a href="">9月05日 周一 八月初八</a>
+                            </li>
 
-                            </a>
+                            <!--星座运势-->
+                            <li class="headerHoroscope hoverDiv">
+                                <a href="">星座运势</a>
+                            </li>
 
-                            <div class="wetherCityCollection">
-                                
-                            </div>
+                        </ul>
 
-                        </div>
+                        <ul class="userInfo">
+                            <li class="browser hoverDiv">
+                                <a href="">浏览器</a>
+                            </li>
+                            <li class="email hoverDiv">
+                                <a href="">邮箱</a>
+                            </li>
+                            <li class="cloudDisk hoverDiv">
+                                <a href="">云盘</a>
+                            </li>
+                            <li class="login hoverDiv">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <a href="">登录</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </header>
 
-    <script src="js/jquery-3.1.0.js"></script>
+
+        <div class="container search">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 searchBody">
+                    <!--baiduLog-->
+                    <a class="baiduLink" title="百度首页" href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.baidu.com%2F%3Ftn%3Dsitehao123&amp;&amp;c=FE5AD38E285B012D3B43FE2A6DA9F1A7" >
+                        <span class="baiduLinkLogo"></span>
+                    </a>
+
+                    <!--input-->
+                    <div class="baiduSearchDiv">
+                        <div class="searchType dropdown">
+
+                            <a class="searchTypeName" href="#">
+                                网页
+                                <span class="glyphicon glyphicon-chevron-down wetherCityArraw"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <button type="btn" class="searchBtn"></button>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery-3.1.0.js"></script>
     </div>
 </body>
 
