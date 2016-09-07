@@ -33,16 +33,16 @@
 
                             <li class="wetherCityWaper hoverDiv dropdown">
                                 <a id="dropdownMenu1" class="wetherSeletedCity">
-                            武汉
-                            <span class="glyphicon glyphicon-chevron-down wetherCityArraw"></span>
-                        </a> &nbsp;&nbsp;轻
+                                    武汉
+                                    <span class="glyphicon glyphicon-chevron-down wetherCityArraw"></span>
+                                </a> &nbsp;&nbsp;轻
                                 <span class="glyphicon glyphicon-cloud"></span> 多云 32~23℃
 
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                                    <li><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                                    <li><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                                    <li><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
                                 </ul>
                             </li>
 
@@ -81,9 +81,9 @@
 
         <div class="container search">
             <div class="row">
-                <div class="col-xs-10 col-xs-offset-1 searchBody">
+                <div class="col-xs-12 searchBody">
                     <!--baiduLog-->
-                    <a class="baiduLink" title="百度首页" href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.baidu.com%2F%3Ftn%3Dsitehao123&amp;&amp;c=FE5AD38E285B012D3B43FE2A6DA9F1A7" >
+                    <a class="baiduLink" title="百度首页" href="https://www.hao123.com/link/https/?key=http%3A%2F%2Fwww.baidu.com%2F%3Ftn%3Dsitehao123&amp;&amp;c=FE5AD38E285B012D3B43FE2A6DA9F1A7">
                         <span class="baiduLinkLogo"></span>
                     </a>
 
@@ -91,26 +91,74 @@
                     <div class="baiduSearchDiv">
                         <div class="searchType dropdown">
 
-                            <a class="searchTypeName" href="#">
+                            <a class="searchTypeName dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">
                                 网页
                                 <span class="glyphicon glyphicon-chevron-down wetherCityArraw"></span>
                             </a>
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                            <ul class="dropdown-menu searchMenu" role="menu">
+                                <li><a href="">网页</a></li>
+                                <li><a href="">音乐</a></li>
+                                <li><a href="">视频</a></li>
+                                <li><a href="">网页</a></li>
+                                <li><a href="">音乐</a></li>
+                                <li><a href="">视频</a></li>
+                                <li><a href="">网页</a></li>
+                                <li><a href="">音乐</a></li>
+                                <li><a href="">更多>></a></li>
                             </ul>
 
                         </div>
+                        <!--搜索输入框-->
+                        <input class="searchInput" type="" name="" value="">
+                        <!--新闻个数-->
+                        <div class="newsCount">
+                            <span class="countNumber">5</span>
+                        </div>
                     </div>
                     <button type="btn" class="searchBtn"></button>
+
+                    <ul class="setTheme">
+                        更改主题
+                        <li><button type=""></button></li>
+                        <li><button type=""></button></li>
+                        <li><button type=""></button></li>
+                    </ul>
+
                 </div>
             </div>
         </div>
 
+        <div class="container hotPoint">
+            <div class="col-xs-10 col-xs-offset-1">
+                <ul>
+                    <span class="glyphicon glyphicon-search hotPointLogo"></span>
+                    <li>
+                        <a href="">武汉一周天气</a>
+                    </li>
+                    <li>
+                        <a href="">微微一笑很倾城</a>
+                    </li>
+                    <li>
+                        <a href="">周杰伦演唱会惨摔</a>
+                    </li>
+                    <li>
+                        <a class="bigHotPoint" href="">国足战平伊朗</a>
+                    </li>
+                    <li>
+                        <a href="">王宝强财产分割</a>
+                    </li>
+                    <li>
+                        <a href="">菲总统骂奥巴马</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
 
         <script src="js/jquery-3.1.0.js"></script>
+        <script src="js/bootstrap.js"></script>
     </div>
 </body>
 
